@@ -22,7 +22,7 @@ Dataset owner James Kho built this dataset from gunviolencearchive.org. Since th
 
 Data was extracted from  a CSV file.
 
-### Transformation
+## Transformation
 1)	CSV file will be read into data frame and transformed .
 2)	 Data in some columns have to be parsed , counted and stored in additional columns.
 3)	Irrelevant columns  have to be dropped.  Renaming and rearrangement of columns have to be done along with changing of data types to maintain uniformity and to present meaningful data.
