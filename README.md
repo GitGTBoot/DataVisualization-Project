@@ -1,5 +1,4 @@
 # DataVisualizations-Project
-## Data Visualization Project Proposal
 
 By George Oddoye & , Minu Khosla, Vidhya.J
 
