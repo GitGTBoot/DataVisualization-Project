@@ -81,7 +81,7 @@ d3.json("/yeardata").then( function (data){
     var layout = {
         title: "Gun Violence 2014 - 2018 ",
         xaxis: { title: "Years" },
-        yaxis: { title: "Number of killings" }
+        yaxis: { title: "Number of Incidents" }
     };
     
     

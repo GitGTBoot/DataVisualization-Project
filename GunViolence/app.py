@@ -19,11 +19,11 @@ app = Flask(__name__)
 
 
 #postgreSQL connection
-rds_connection_string =  "<postgres>:<password>@localhost:5432/GUN_VIOLENCE_PROJECT" 
+rds_connection_string =  "postgres:spitfire1@localhost:5432/GUN_VIOLENCE_PROJECT" 
 engine = create_engine(f'postgresql://{rds_connection_string}')
 @app.route("/yeardata")
 def year():
-    df = pd.read_sql_query('SELECT  * FROM guns_year LIMIT 5' , con=engine).head()
+    df = pd.read_sql_query('SELECT  * FROM gun_year LIMIT 5' , con=engine).head()
     bar_list = df.to_dict(orient='records')
     print (bar_list)
     return jsonify(bar_list)
