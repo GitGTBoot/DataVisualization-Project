@@ -22,81 +22,7 @@
   <body>
       {% extends "layout.html" %}
       {% block content %}
-    <!-- Start of navbar -->
-    <!-- <nav class="navbar navbar-default">
-      <div class="container-fluid navbar-custom"> -->
 
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <!-- <div class="row">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="index.html" id="logo">GUN VIOLENCE IN USA</a>
-            </div>
-          </div> -->
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right navbar-right-custom">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CHARTS <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                 <li><a href="linechart.html">2014-2018 Monthly Reports</a></li>
-                  <li><a href="barchart.html">2014-2018 Yearly Reports</a></li>
-                  <li><a href="cloudiness.html">Cloudiness</a></li>
-                  <li><a href="wind.html">Wind Speed</a></li>
-                </ul>
-              </li>
-              <li><a href="current2019.html">2019 Data Visual</a></li>
-              <li><a href="data.html">Data</a></li>
-            </ul> -->
-          <!-- </div> -->
-          <!-- /.navbar-collapse -->
-        <!-- </div> -->
-      <!-- </div> -->
-      <!-- /.container-fluid -->
-    <!-- </nav> -->
-    <!-- End of navbar -->
-
-    <!-- Start of container -->
-    <!-- <div class="container">
-      <section class="row">
-        <div class="col-md-8">
-          <article class="description-content">
-            <h1 class="description-header">Max Temperature</h1>
-            <hr class="description-hr"/>
-            <img src="../../assets/images/Fig1.png" alt="" class="img-responsive"/>
-            <p>As expected the weather becomes significantly warmer as one approaches the equator(0 Deg.Latitude).More interstingly,
-              however,is the fact that the sourthern hemisphere tends to be warmer this time of the year than the northern hemisphere.
-              This may be due to the tilt of the earth at the time of the year this data was gathered. 
-            </p>   
-          </article>
-        </div>
-        <div class="col-md-4">
-
-          <!- Start of Visualizations imageNav Area -->
-          <!-- <section id="imageNav-area">
-            <div class="imageNav-content">
-              <h2 class="imageNav-header">Visualizations</h2>
-              <hr />
-              <div id="images">
-                <a href="linechart.html"><img src="../../assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo active"></a>
-                <a href="barchart.html"><img src="../../assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
-                <a href="cloudiness.html"><img src="../../assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
-                <a href="wind.html"><img src="../../assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
-              </div>
-            </div>
-          </section> -->
-          <!-- End of the Visualizations imageNav Area -->
-
-        <!-- </div>
-      </section>
-    </div> --> 
     <!-- End of container -->
     <h1>Gun Violence from Jan 2014 to Mar 2018 on a monthly basis</h1>
         <div id="plot"></div>
@@ -106,6 +32,107 @@
         <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
         
         <script src="../static/js/line.js"></script>
+        <div class="container">
+          <section class="row">
+            <div class="col-md-10">
+              <article class="description-content">
+                <h1 class="description-header">Line Chart: Gun Violence (Jan 2014 to Mar 2018)</h1>
+                <hr class="description-hr"/>
+                <img src="../static/images/gun_aman.jpg" alt="" id="description-image"/>
+                <p>This line chart displays the number of gun violence incidents which resulted in either death or injuries as well as the total gun count per incident per month from the years of 2014 through 2018 across the United States of America.</p>
+                <p>During those four years and three months the trends in count of gun violence incidents resulting in injury or death remained relatively the same with a few intersting minor spikes and drops. However the count of guns involved in these incidents experienced a spike in December 2014 and was followed by an even more massive spike in August 2016.</p>
+                <p>In regards to the minor peaks and drops observed in the trends of gun related injuries and killings it appears that year after year the same spikes and drops occured in specific months. From 2014 to 2018 every year a drop in the number of gun related injuries/killings occured in February. On average there were 505 less gun related injuries and 216 fewer gun related deaths. </p>
+                <table style="width:100%" border="2">
+                  <thead>
+                    <tr>
+                      <th colspan="3">Gun Violence Incidents</th>
+                    </tr>
+                    <tr>
+                      <th>Drop Months</th>
+                      <th>Injuries</th>
+                      <th>Killings</th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jan 2014 → Feb 2014</td>
+                      <td>- 652</td>
+                      <td>- 225</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Jan 2015 → Feb 2015</td>
+                      <td>- 430</td>
+                      <td>-253</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Jan 2016 → Feb 2016</td>
+                      <td>- 386</td>
+                      <td>- 155</td>
+                      
+                    </tr> 
+                    <td>Jan 2017 → Feb 2017</td>
+                    <td>- 407</td>
+                    <td>- 215</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Jan 2018 → Feb 2018</td>
+                    <td>- 652</td>
+                    <td>- 233</td>
+                    
+                  </tr>    
+                  <tr>
+                    <th colspan="3"></th>
+                  </tr>
+                  <tr>
+                    <th>Spike Months</th>
+                    <th>Injuries</th>
+                    <th>Killings</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jun 2014 → Jul 2014</td>
+                    <td>+ 354</td>
+                    <td>+ 35</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Jun 2015 → Jul 2015</td>
+                    <td>+ 255</td>
+                    <td>+ 201</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Jun 2016 → Jul 2016</td>
+                    <td>+ 534</td>
+                    <td>+ 123</td>
+                    
+                  </tr> 
+                  <td>Jun 2017 → Jul 2017</td>
+                  <td>+ 339</td>
+                  <td>+ 25</td>
+                  
+                </tr>
+                <tr>
+                  <td>Jun 2018 → Jul 2018</td>
+                  <td>+ 380</td>
+                  <td>+ 27</td>
+                  
+                </tr>                
+                  </tbody>
+                  <tfoot>
+                 
+                  </tfoot>
+                </table>                
+                <p>From 2014 to 2018 every year an increase in the number of gun related injuries/killings occured in February. On average there were 372 more gun related injuries and 82 more gun related killings. </p>    
+                <p></p>
+ 
+                
 
     <!-- Start of footer -->
     <footer class="footer navbar-fixed-bottom">
