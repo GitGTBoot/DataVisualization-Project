@@ -51,6 +51,6 @@ Research will be done to add a plugin or a new JS library to enhance the feature
 
 
 
- ### link to the primary GitHub repository   
+ # link to the primary GitHub repository   
 
 https://github.com/GitGTBoot/DataVisualizations-Project
