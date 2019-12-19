@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Gun Violence Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen"> 
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" media="screen"> -->
+    
+    <!-- Our own CSS stylesheet -->
+   
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen"> 
+
+  </head>
+
+  <body>
+      {% extends "layout.html" %}
+      {% block content %}
+    <!-- Start of navbar -->
+    <!-- <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom"> -->
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="index.html" id="logo">GUN VIOLENCE IN USA</a>
+            </div>
+          </div> -->
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CHARTS <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="visualizations/linechart.html">2014-2018 Monthly Reports</a></li>
+                  <li><a href="visualizations/barchart.html">2014-2017 Yearly Reports</a></li>
+                  <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                  <li><a href="visualizations/wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="current2019.html">2019 Data Visual</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul> -->
+          <!-- </div> -->
+          <!-- /.navbar-collapse -->
+        <!-- </div> -->
+      <!-- </div> -->
+      <!-- /.container-fluid -->
+    <!-- </nav> -->
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container">
+        <!-- <section class="row"> -->
+            <!-- <div class="col-med-12"> -->
+                <div class="Com-content"> 
+                    <h1 class="description-header">Comparison: Latitude vs. X</h1>
+                    <hr class="description-hr"/>
+                    <p>Click any plot to get in-depth analysis.</p>
+                    <div class="row">
+
+                      <div class="col-sm-6">
+                        <h3 class="imageCom-header">vs. Max Temperature</h3> 
+                        <a href="visualizations/linechart.html"><img src="../assets/images/Fig1.png" class="img-responsive" alt="Latitude vs. Max Temperature" class="imageCom-photo"></a>
+                      </div>
+                      <div class="col-sm-6">
+                        <h3 class="imageCom-header">vs. Humidity</h3>
+                        <a href="visualizations/barchart.html"><img src="../assets/images/Fig2.png" class="img-responsive" alt="Latitude vs. Max Temperature" class="imageCom-photo"></a>
+                      </div>
+                    </div>
+                    <div class="row"> 
+                      <div class="col-sm-6">
+                        <h3 class="imageCom-header">vs. Cloudiness</h3>
+                        <a href="visualizations/cloudiness.html"><img src="../assets/images/Fig3.png" class="img-responsive" alt="Latitude vs. Max Temperature" class="imageCom-photo"></a>
+                      </div>
+                      <div class="col-sm-6">
+                        <h3 class="imageCom-header">vs. Wind Speed</h3>
+                        <a href="visualizations/wind.html"><img src="../assets/images/Fig4.png" class="img-responsive" alt="Latitude vs. Max Temperature" class="imageCom-photo"></a>
+                      </div>
+                    </div> 
+                  </div> 
+            <!-- </div> -->
+        <!-- </section> -->
+       
+    </div>
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        There is HOPE with GUN CONTROL
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    {% endblock %}
+  </body>
+
+</html>
