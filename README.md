@@ -2,7 +2,7 @@
 
 By George Oddoye & , Minu Khosla, Vidhya.J
 
-#### Inspiration
+### Inspiration
 
 There has been steady increase in  Gun Violence over the past decade and it continues to rapidly increase . Data scientists and statisticians can help analyze this dire situation by studying gun violence data and make informed predictions about future trends in order to build strategies that will eventually minimize , control gun violence and promote gun safety.
 
