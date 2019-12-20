@@ -1,6 +1,6 @@
 # DataVisualizations-Project
 
-By George Oddoye & , Minu Khosla, Vidhya.J
+By George Oddoye & Minu Khosla, Vidhya.J
 
 ### Inspiration
 
