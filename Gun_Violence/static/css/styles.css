@@ -23,7 +23,7 @@ html{ min-height: 100%;
     color: slategray
 }
 .description-content{
-    margin-top: 32px;
+    margin-top: 10px;
     background-color:white;
     padding: 30px;
 }
@@ -56,12 +56,18 @@ html{ min-height: 100%;
     /* display: inline; */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.dropdown-toggle{
+.map-dropdown-toggle{
     font-size: 30px;
     color: yellow;
-    background-color:blue;    
+    background-color:red;    
 }
-li a {
+.chart-dropdown-toggle{
+    font-size: 30px;
+    color: yellow;
+    background-color:white;    
+}
+
+.maptab{
     display: block;
     border-bottom-color: black;
     border-left-color:gray;
@@ -69,22 +75,70 @@ li a {
     border-right-color:grey;
     font-size: 20px;
     color:black;
-    background-color: brown;
+    background-color:red;
+    mask-border-width: 20px;
+    text-align: center;
+    /* padding: 20px 30px; */
+    text-decoration-color:black;
+}
+.charttab{
+    display: block;
+    border-bottom-color: black;
+    border-left-color:gray;
+    border-top-color:  black;
+    border-right-color:grey;
+    font-size: 20px;
+    color:black;
+    background-color:blue;
+    mask-border-width: 20px;
+    text-align: center;
+    /* padding: 20px 30px; */
+    text-decoration-color:black
+
+}
+
+.datatab{
+
+    display: block;
+    border-bottom-color: black;
+    border-left-color:gray;
+    border-top-color:  black;
+    border-right-color:grey;
+    font-size: 30px;
+    color:black;
+    background-color:blue;
+    mask-border-width: 20px;
+    text-align: center;
+    /* padding: 20px 30px; */
+    text-decoration-color:black;
+}
+
+
+
+/* li a {
+    display: block;
+    border-bottom-color: black;
+    border-left-color:gray;
+    border-top-color:  black;
+    border-right-color:grey;
+    font-size: 20px;
+    color:black;
+    background-color:blue;
     mask-border-width: 20px;
     text-align: center;
     padding: 20px 30px;
     text-decoration-color:black;
-}
+} */
 .footer{
     display: block;
     border-top-color: darkturquoise;
     background-color: dimgray;
-    height: 50px;
+    height: 30px;
     
 }
 .text-muted{
     font-size: 14px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   
     color:white;
 
