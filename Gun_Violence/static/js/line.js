@@ -57,7 +57,7 @@ var trace1 = {
 
 // FOR BAR CHART
 
-
+// This API call will be made to get data from PostGres db
 
 d3.json("/yeardata").then( function (data){
   
@@ -89,4 +89,33 @@ d3.json("/yeardata").then( function (data){
   
 })
 
+// This API call will be made to get data from csv_file
+d3.json("/barchartdata").then( function (data){
+  
+  var trace1 = {
+      x: data.map(row => row.year),
+      y: data.map(row => row.injured),
+      text: "Injured",
+      name: "Injured",
+      type: "bar"
+    };
+  
+    var trace2 = {
+      x: data.map(row => row.year),
+      y: data.map(row => row.killed),
+      text: "Killed",
+      name:"Killed",
+      type: "bar"
+    }
+  var data =[trace1, trace2];
 
+  var layout = {
+      title: "Gun Violence 2014 - 2018 ",
+      xaxis: { title: "Years" },
+      yaxis: { title: "Number of Incidents" }
+  };
+  
+  
+  Plotly.newPlot("barchart", data, layout);
+  
+})

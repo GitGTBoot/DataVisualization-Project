@@ -22,19 +22,15 @@ app = Flask(__name__)
 rds_connection_string =  "<postgres>:<password>@localhost:5432/GUN_VIOLENCE_PROJECT" 
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
-
+# bar chart data 
 @app.route("/yeardata")
 def year():
     df = pd.read_sql_query('SELECT  * FROM gun_year LIMIT 5' , con=engine).head()
     bar_list = df.to_dict(orient='records')
     print (bar_list)
     return jsonify(bar_list)
-
-
-
-
-##############################################################
-
+###############################################################
+# pie chart data from PostGres
 @app.route("/shootingtypes")
 def shootingstypes():
      type_df = pd.read_sql_query('select * from gunshootingstype', con=engine).head(10)
@@ -44,14 +40,15 @@ def shootingstypes():
 
 
 #######################################################
-# reading from postgres for pie chart 
-# @app.route("/markercluster")
-# def killings():
-#       killings_df = pd.read_sql_query('SELECT * FROM killings_injuries_2018 ', con = engine)
-#       killings_list = killings_df.to_dict(orient = 'records')
-#       return jsonify(killings_list)
+# Bar Chart data from csv
+@app.route("/barchartdata")
+def barchart():
+     bar_df = pd.read_csv("static/data/year_trend_gun.csv")
+     bar_dict = bar_df.to_dict(orient='records')
+     return jsonify(bar_dict)
 
 #########################################################
+# line chart data from csv
 @app.route("/monthlydata")
 def month():
      flaskdf = pd.read_csv("static/data/gun2014onwrd.csv")
@@ -69,7 +66,7 @@ def incidents ():
 
 
 ##########################################################
-
+# pie chart data from PostGres
 @app.route("/markercluster")
 def markercluster():
      df = pd.read_sql_query('select * from markercluster', con=engine)
@@ -84,7 +81,7 @@ def markercluster():
 # rendering templates for all html pages
 @app.route("/")
 def index():
-    """Return the homepage."""
+#     """Return the homepage."""
     return render_template("index.html")
 
 @app.route("/barchart")
@@ -96,13 +93,13 @@ def bar():
 def line():
      return render_template("linechart.html")
 
-@app.route("/shootingtype")
-def cloudiness():
-     return render_template("shootingtype.html")
+@app.route("/piechart")
+def gun():
+     return render_template("piechart.html")
 
-@app.route("/wind")
-def wind():
-     return render_template("wind.html")
+@app.route("/heatmap")
+def violence():
+     return render_template("heatmap.html")
    
     
 
