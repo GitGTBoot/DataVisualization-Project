@@ -42,19 +42,26 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maps <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="{{ url_for('clustermap') }}" >2018 Gun Violence </a></li>
+                      <li><a href="{{ url_for('heatmap') }}">2013-2018 Gun Violence</a></li>
+                      <li><a href="{{ url_for('choroplethmap') }}">2019 Mass Shootings</a></li>
+                    </ul>
+              </li>
+              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                 <li><a href="{{ url_for('line') }}" >2014-2018 Monthly Reports</a></li>
-                  <li><a href="{{ url_for('bar') }}" >2014-2017 Yearly Reports</a></li>
-                  <li><a href="{{ url_for('gun') }}">2014-2019 Shootings Types</a></li>
-                  <li><a href="{{ url_for('violence') }}">2013-2018 Gun Violence</a></li>
+                  <li><a href="{{ url_for('linechart') }}" >2014-2018 Monthly Reports</a></li>
+                  <li><a href="{{ url_for('barchart') }}" >2014-2017 Yearly Reports</a></li>
+                  <li><a href="{{ url_for('piechart') }}">2014-2019 Shootings Types</a></li>
                 </ul>
               </li>
-              <li><a href="{{ url_for('current') }}">2019 Mass Shootings</a></li>
               <li><a href="{{ url_for('data') }}">Data</a></li>
-              <!-- <li><a href="current2019.html">2019 Data Visual</a></li>
-              <li><a href="data.html">Data</a></li> -->
-            </ul>
+              
+            </ul>  
+              
+            
           </div><!-- /.navbar-collapse -->
         </div>
       </div><!-- /.container-fluid -->

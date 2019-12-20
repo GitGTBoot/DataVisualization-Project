@@ -42,7 +42,7 @@ def shootingstypes():
 #######################################################
 # Bar Chart data from csv
 @app.route("/barchartdata")
-def barchart():
+def yearlybarchart():
      bar_df = pd.read_csv("static/data/year_trend_gun.csv")
      bar_dict = bar_df.to_dict(orient='records')
      return jsonify(bar_dict)
@@ -84,28 +84,34 @@ def index():
 #     """Return the homepage."""
     return render_template("index.html")
 
-@app.route("/barchart")
-def bar():
+@app.route("/clustermap")
+def clustermap():
+     return render_template("markercluster.html")
+
+
+
+@app.route("/yearlybarchart")
+def barchart():
      return render_template("barchart.html")
 
 
-@app.route("/linechart")
-def line():
+@app.route("/monthlylinechart")
+def linechart():
      return render_template("linechart.html")
 
-@app.route("/piechart")
-def gun():
+@app.route("/periodpiechart")
+def piechart():
      return render_template("piechart.html")
 
-@app.route("/heatmap")
-def violence():
+@app.route("/timeframeheatmap")
+def heatmap():
      return render_template("heatmap.html")
    
     
 
 @app.route("/current2019")
-def current():
-     return render_template("current2019.html")
+def choroplethmap():
+     return render_template("choroplethmap.html")
    
 
 @app.route("/data")
