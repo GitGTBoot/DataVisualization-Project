@@ -79,7 +79,7 @@ d3.json("/yeardata").then( function (data){
   var data =[trace1, trace2];
 
   var layout = {
-      title: "Gun Violence 2014 - 2018 ",
+      title: "Gun Violence 2014 - 2017 ",
       xaxis: { title: "Years" },
       yaxis: { title: "Number of Incidents" }
   };
@@ -110,7 +110,7 @@ d3.json("/barchartdata").then( function (data){
   var data =[trace1, trace2];
 
   var layout = {
-      title: "Gun Violence 2014 - 2018 ",
+      title: "Gun Violence 2014 - 2017 ",
       xaxis: { title: "Years" },
       yaxis: { title: "Number of Incidents" }
   };

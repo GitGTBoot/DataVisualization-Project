@@ -47,7 +47,7 @@ html{ min-height: 100%;
 #logo.navbar-brand{
     display: block;
     width: 120%;
-    background-color: orange;
+    background-color: rgb(255, 136, 0);
     float: inherit;
     margin-left: 100px;
     font-size: 60px;
@@ -115,20 +115,7 @@ html{ min-height: 100%;
 
 
 
-/* li a {
-    display: block;
-    border-bottom-color: black;
-    border-left-color:gray;
-    border-top-color:  black;
-    border-right-color:grey;
-    font-size: 20px;
-    color:black;
-    background-color:blue;
-    mask-border-width: 20px;
-    text-align: center;
-    padding: 20px 30px;
-    text-decoration-color:black;
-} */
+
 .footer{
     display: block;
     border-top-color: darkturquoise;
