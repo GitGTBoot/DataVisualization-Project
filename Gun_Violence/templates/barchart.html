@@ -22,8 +22,14 @@
   <body>
       {% extends "layout.html" %}
       {% block content %}
-
-    <h1>Gun Violence from Jan 2014 to Dec 2017 Yearly Reports </h1>
+      <div class="container">
+        <section class="row">
+          <div class="col-md-12">
+            <h1 class="description-header" style="font-size:38px">Gun Violence from Jan 2014 to Dec 2017 Yearly Reports </h1>
+            <hr class="description-hr"/>
+          </div>
+      </div>
+    
       
         <div id="barchart"></div> 
       
@@ -32,8 +38,9 @@
         <script src="../static/js/line.js"></script>
         <div class="container" >
           <section class="row">
-            <div class="col-md-11">
+            <div class="col-md-10">
               <article class="description-content">
+                <br>
                 <h1 class="description-header">Bar Chart: Gun Violence (2014-2017)</h1>
                 <hr class="description-hr"/>
                 <img src="../static/assets/images/gun_bar.jpg" alt="" id="description-image"/>
