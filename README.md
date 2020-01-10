@@ -10,7 +10,7 @@ There has been steady increase in  Gun Violence over the past decade and it cont
 
 To create a  web visualization dashboard :
 1)	that has a landing page with  USA map visualization of the gun violence incidents
-2)	 links to one or more visualization pages that will represent relationships between different variables in the form of pie charts, bar charts or scatter plots .
+2)	 links to one or more visualization pages that will represent relationships between different variables in the form of pie charts, bar charts or scatter plots.
 
 ### Data Source
 
