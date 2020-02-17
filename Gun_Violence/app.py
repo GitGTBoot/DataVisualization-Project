@@ -117,7 +117,10 @@ def choroplethmap():
 @app.route("/data")
 def data():
      return render_template("data.html")
-   
+
+@app.route("/guncontrol") 
+def guncontrol():
+     return render_template("guncontrol.html")
 
 if __name__ == "__main__":
      app.run(debug=True)
