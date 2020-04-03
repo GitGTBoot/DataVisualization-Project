@@ -22,7 +22,7 @@ We created this website to have a fully interactive navigation bar including dro
 
 #### 1) We Created a maps tab which included:
 ###### Cluster Map of gun violence that occured in America during 2018
-![pic](/markerClusterMap.png)
+![pic](/MarkerClusterMap.png)
 
 
 ###### Heat Map of gun violence between 2013-2018
