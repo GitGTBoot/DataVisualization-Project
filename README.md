@@ -1,4 +1,4 @@
-# GUN VIOLENCE IN THE USA 
+# GUN VIOLENCE IN THE USA  
 
 
 ### By George Oddoye & Minu Khosla, Vidhya.J
