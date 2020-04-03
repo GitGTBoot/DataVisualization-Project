@@ -1,4 +1,4 @@
-# GUN VIOLENCE IN THE USA  
+# GUN VIOLENCE IN THE USA  ![pic](/gun_flag.jpg)
 
 
 ### By George Oddoye & Minu Khosla, Vidhya.J
@@ -11,34 +11,56 @@ The two major political parties in the United States (Democrats/Republicans) hav
 
 ## Goal
 
-Our goal was to create a fully functional web visualization dashboard that provides gun violence data in an easily understandable manner with the help of the following :
+Our goal was to create a fully functional web visualization dashboard that provides gun violence data in an easily understandable manner . 
 
-#### 1) Create a maps tab which would include:
-• Cluster Map of gun violence that occured in America during 2018
-• Heat Map of gun violence between 2013-2018
-• Choropleth Map of mass shootings in 2019
+## User-driven interaction
 
-#### 2) Ceate a charts tab which would include:
-• Line Chart displaying Gun Violence from Jan 2014 to Mar 2018 on a monthly basis
-• Bar Chart displaying Gun Violence from Jan 2014 to Dec 2017 Yearly Reports
-• Pie Chart displaying Types of Gun Violence during 2014-2019 on a yearly basis
+We created this website to have a fully interactive navigation bar including dropdown menus for the user to choose different views. Each view is either a Map or a Chart dipicting Data that could be used to analyse and see trends to draw conclusions . The user also has the ability to switch the website into darkmode with the click of a button. All of the maps and charts are interactive as well.The "Data page" shows all the data utilized in this project.
+
+![pic](Navbar.png)
+
+
+#### 1) We Created a maps tab which included:
+###### Cluster Map of gun violence that occured in America during 2018
+![pic](/markerClusterMap)
+
+
+###### Heat Map of gun violence between 2013-2018
+![pic](/HeatMap)
+
+
+######  Choropleth Map of mass shootings in 2019
+![pic](/ChoroplethMap)
+
+
+#### 2) We Created a charts tab which included:
+######  Line Chart displaying Gun Violence from Jan 2014 to Mar 2018 on a monthly basis
+![pic](/LineChart)
+
+
+######  Bar Chart displaying Gun Violence from Jan 2014 to Dec 2017 Yearly Reports
+![pic](/BarChart)
+
+
+######  Pie Chart displaying Types of Gun Violence during 2014-2019 on a yearly basis
+![pic](/PieChart)
+
+# Methods and Tools that we used
+
 
 ## Data Source
 
 Our dataset was obtained from “Gun Violence Data” (https://www.kaggle.com/jameslko/gun-violence-data) as well as https://www.gunviolencearchive.org. This dataset contains more than 260k gun violence incidents, in the US between January 2013 and March 2018 , with detailed information about each incident, in CSV format. In order to collect 2019 data we had to download the data from https://www.gunviolencearchive.org in csv format.
 
-## User-driven interaction
-
-We created this website to have a fully interactive navigation bar including dropdown menus for the user to choose different views and also have the ability to switch the website into darkmode with the click of a button. All of the maps and charts are interactive as well.
 
 ### Extraction
 
 Data was extracted from  a CSV file.
 
 ### Transformation
-1)	We read the CSV file into data frame and transformed it .
-2)	We parsed Data in some columns , counted and stored in additional columns.
-3)	Irrelevant columns were dropped. We renamed and rearranged columns and changed data types to maintain uniformity and present meaningful data.
+1.	We read the CSV file into data frame and transformed it .
+2.	We parsed Data in some columns , counted and stored in additional columns.
+3.	Irrelevant columns were dropped. We renamed and rearranged columns and changed data types to maintain uniformity and present meaningful data.
  
 We laoded the Data frame into relational database – Postgres.
 
@@ -54,15 +76,6 @@ We created HTML pages for each visualization of the maps and charts such that ea
  We have used D3.js , Plotly and Leaflet libraries to provide the basic framework for building the USA gun violence information maps and the different types of charts . 
 
 Darkmode.js was an additional Javascript library that we used to enhance the user experience.
-
-
-### User-driven interaction  
-
-1)	The web page / dashboard will be designed to contain a navigation bar with dropdown menu for the user to choose different views.
-2)	The USA gun information map will contain different layer groups allowing the user to choose different visualizations
-
-
-
 
 
  ## link to the primary GitHub repository   
