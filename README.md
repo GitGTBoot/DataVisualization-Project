@@ -17,10 +17,8 @@ Our goal was to create a fully functional web visualization dashboard that provi
 
 We created this website to have a fully interactive navigation bar including dropdown menus for the user to choose different views. Each view is either a Map or a Chart dipicting Data that could be used to analyse and see trends to draw conclusions . The user also has the ability to switch the website into darkmode with the click of a button. All of the maps and charts are interactive as well.The "Data page" shows all the data utilized in this project.
 
-![pic](Navbar.png)
-
-
-#### 1) We Created a maps tab which included:
+#### 1) We Created a Maps Tab which included:
+![pic](MapsNavBar.png)
 ###### Cluster Map of gun violence that occured in America during 2018
 ![pic](/MarkerClusterMap1.png)
 
@@ -33,7 +31,9 @@ We created this website to have a fully interactive navigation bar including dro
 ![pic](/ChoroplethMap1.png)
 
 
-#### 2) We Created a charts tab which included:
+#### 2) We Created a Charts Tab which included:
+![pic](Navbar.png)
+
 ######  Line Chart displaying Gun Violence from Jan 2014 to Mar 2018 on a monthly basis
 ![pic](/LineChart.png)
 
@@ -44,6 +44,12 @@ We created this website to have a fully interactive navigation bar including dro
 
 ######  Pie Chart displaying Types of Gun Violence during 2014-2019 on a yearly basis
 ![pic](/PieChart.png)
+
+#### 3) We created a Data Tab which included all data used in our project and a SCORECARD for Gun Contol 
+![pic](HopeNavbar.png)
+
+###### Countrywide scorecard by State that displays how effectively gun control laws when implemented at a State Level did show significant reduction in gun violence .
+![pic](/GunScoreCard.png)
 
 # Methods and Tools that we used
 
