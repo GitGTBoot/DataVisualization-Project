@@ -46,7 +46,7 @@ We created this website to have a fully interactive navigation bar including dro
 ![pic](/PieChart.png)
 
 #### 3) We created a Data Tab which included all data used in our project and a SCORECARD for Gun Contol 
-![pic](HopeNavbar.png)
+![pic](/HopeNavbar.png)
 
 ###### Countrywide scorecard by State that displays how effectively gun control laws when implemented at a State Level did show significant reduction in gun violence .
 ![pic](/GunScoreCard.png)
