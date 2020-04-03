@@ -22,28 +22,28 @@ We created this website to have a fully interactive navigation bar including dro
 
 #### 1) We Created a maps tab which included:
 ###### Cluster Map of gun violence that occured in America during 2018
-![pic](/markerClusterMap)
+![pic](/markerClusterMap.png)
 
 
 ###### Heat Map of gun violence between 2013-2018
-![pic](/HeatMap)
+![pic](/HeatMap.png)
 
 
 ######  Choropleth Map of mass shootings in 2019
-![pic](/ChoroplethMap)
+![pic](/ChoroplethMap.png)
 
 
 #### 2) We Created a charts tab which included:
 ######  Line Chart displaying Gun Violence from Jan 2014 to Mar 2018 on a monthly basis
-![pic](/LineChart)
+![pic](/LineChart.png)
 
 
 ######  Bar Chart displaying Gun Violence from Jan 2014 to Dec 2017 Yearly Reports
-![pic](/BarChart)
+![pic](/BarChart.png)
 
 
 ######  Pie Chart displaying Types of Gun Violence during 2014-2019 on a yearly basis
-![pic](/PieChart)
+![pic](/PieChart.png)
 
 # Methods and Tools that we used
 
