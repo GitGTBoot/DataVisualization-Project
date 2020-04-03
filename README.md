@@ -22,7 +22,7 @@ We created this website to have a fully interactive navigation bar including dro
 
 #### 1) We Created a maps tab which included:
 ###### Cluster Map of gun violence that occured in America during 2018
-![pic](/MarkerClusterMap.png)
+![pic](/MarkerClusterMap1.png)
 
 
 ###### Heat Map of gun violence between 2013-2018
@@ -30,7 +30,7 @@ We created this website to have a fully interactive navigation bar including dro
 
 
 ######  Choropleth Map of mass shootings in 2019
-![pic](/ChoroplethMap.png)
+![pic](/ChoroplethMap1.png)
 
 
 #### 2) We Created a charts tab which included:
