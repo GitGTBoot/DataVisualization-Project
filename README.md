@@ -1,4 +1,4 @@
-# GUN VIOLENCE IN THE USA  ![pic](/gun_flag.jpg)
+# GUN VIOLENCE IN THE USA  ![pic](/gun_flag.jpg) 
 
 
 ### By George Oddoye & Minu Khosla, Vidhya.J
